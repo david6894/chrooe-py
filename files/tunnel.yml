@@ -1,0 +1,12 @@
+
+  tunnel: a7e3cbf2-087c-4b5a-8f97-3ea9d0b64c80
+  credentials-file: ./tunnel.json
+  protocol: auto
+  
+  ingress:
+    - hostname: pychoreogugu.status-turbojerry.tk
+      service: http://localhost:8002
+      originRequest:
+        noTLSVerify: true
+    - service: http_status:404
+  
